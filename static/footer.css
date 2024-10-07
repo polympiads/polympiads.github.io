@@ -1,0 +1,98 @@
+
+footer {
+    margin-top: 50px;
+    display: flex;
+
+    background-color: #f5f7f6;
+}
+footer>footer-container {
+    flex-grow: 1;
+
+    max-width: 840px;
+    padding-left:  20px;
+    padding-right: 20px;
+
+    margin-left:  auto;
+    margin-right: auto;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+footer-bar {
+    margin-top: 40px;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #dddddd80;
+}
+footer-last {
+    color: #969696;
+    display: flex;
+    margin-top: 40px;
+    font-weight: 300;
+}
+footer-last>copyright {
+    flex-grow: 1;
+    font-size: smaller;
+    font-weight: 200;
+}
+
+footer-last>spacing {
+    flex-grow: 1;
+}
+
+footer-element>div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+footer-element>:first-child {
+    font-weight: 500;
+    font-size: larger;
+    padding-bottom: 10px;
+}
+
+footer-logo {
+    display: block;
+    background: url(/assets/logo-classical.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 210px;
+    height: 70px;
+    cursor: pointer;
+}
+footer-logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+footer-logo-epfl {
+    display: block;
+    background: url(/assets/logo-epfl.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 95px;
+    height: 20px;
+    cursor: pointer;
+}
+footer-logo-epfl a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 600px) {
+    .mobile-only {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .laptop-only {
+        display: none;
+    }
+
+    footer-list {
+        flex-direction: column;
+    }
+}
